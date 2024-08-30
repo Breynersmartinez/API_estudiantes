@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.Entity.Student;
 
 /*Se agrega la anotacion repository */
+//esto es una interface
 @Repository
 
 public interface StudentRepository extends JpaRepository<Student, Long>{
