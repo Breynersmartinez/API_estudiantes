@@ -54,7 +54,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+	
+   <dependency>
+     <groupId>io.gitee.zay9p02</groupId>
+     <artifactId>imocc-api-client</artifactId>
+     <version>1.0.4</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<plugins>

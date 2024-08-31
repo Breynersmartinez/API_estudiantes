@@ -2,9 +2,11 @@ package Controller;
 
 import javax.annotation.processing.SupportedSourceVersion;
 
-import org.hibernate.mapping.List;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,14 +38,22 @@ public List<Student> getAll(){
 return  studentService.getStudents();
     }
 
+    @GetMapping("/{studentId}")
+    public Student getBid(@PathVariable("studentId") Long studentId){
+        return  studentService.getStudent(studentId);
+            }
 
     /* Metodo para actualizacion de datos */
     @PostMapping
-    public Void saveUpdate(@RequestBody Student student){
+    public Void saveUpdate(@RequestBody Student student) {
      studentService.saveOrUpdate(student);
     }
  
+@DeleteMapping("/{studentId}")
+public void saveUpdate(@PathVariable("studentId") Long studentId ){
+    studentService.delete(studentId);
 
+}
     
 
 }

@@ -24,7 +24,7 @@ private long studentId;
 
 private String firstName;
 
-private  String LastName;
+private  String lastName;
 
 /* Se puede añadir configuraciones para el email con esta notacion */
 @Column(name = "email_adress",unique = true,nullable = false)
