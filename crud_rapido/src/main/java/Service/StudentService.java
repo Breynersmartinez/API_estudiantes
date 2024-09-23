@@ -1,4 +1,4 @@
-package com.Service;
+package Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Service;
 
-import com.Entity.Student;
-import com.Repository.StudentRepository;
+import Entity.Student;
+import Repository.StudentRepository;
 
 /* NOTACION DE LOS SERVICIOS   */
 @Service
